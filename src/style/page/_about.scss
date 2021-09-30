@@ -1,0 +1,26 @@
+.about-page{
+
+    display: flex;
+    flex-direction: column;
+    h1{
+        color: white;
+        background-color: black;
+        padding: 5vh 1rem;
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    h2{
+        padding: 1em 0em;
+    }
+    p{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .contentAbout{
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+}
+

@@ -1,0 +1,80 @@
+.productPage{
+    background: white;
+    .productPageImage{
+
+    }
+    .productPageDesc{
+        padding: 0em 1em;
+        h2{
+            margin:1em 0em;
+            font-size: 1.5rem;
+        }
+        p{
+            margin:0em;
+            font-size: 1.2rem;
+        }
+        h3{
+            margin-top: 2em;
+            font-size: 1.2rem;
+        }
+        input{
+            margin:0em;
+            font-size: 1.2rem;
+            padding: .5em;
+            border: 1px solid #000;
+            width: 100%;
+        }
+        select{
+            margin:0em;
+            margin-bottom: 1em;
+            background: white;
+            font-size: 1.2rem;
+            padding: .5em;
+            border: 1px solid #000;
+            width: 100%;
+        }
+        button{
+            margin:1em 0em;
+            font-size: 1.2rem;
+            padding: .5em 2em;
+            background-color: #000;
+            color: #fff;
+            border: none;
+        }
+        .menu-button{
+            margin: 1em 0em;
+            padding: .2em 0em;
+            background-color: #fff;
+            color: black;
+            border-bottom: 1px solid black;
+        }
+        .MenuButton{
+            background: transparent;
+            color: #000;
+            padding: 0;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+@include bp("small"){
+    .productPage{
+        display: flex;
+        .productPageImage{
+
+            width: 40vw;
+        }
+        .productPageDesc{
+            top: 0;
+            padding: 8vh 0;
+            position: sticky;
+            left: 50%;
+            width: 40%;
+            height: 100%;
+        }
+        .productPageDesc p{
+            font-size: 1rem;
+        }
+    }
+
+}
