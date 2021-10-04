@@ -3,6 +3,7 @@
     flex-direction: column;
     padding: 8rem 1rem;
     padding-bottom: 4rem;
+    align-items: center;
     h2{
         font-size: 1.5rem;
         font-weight: 800;
@@ -10,33 +11,71 @@
     .newsletter__container{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    .newsletter__container__title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        h2{
+            font-weight: 900;
+            font-size: 2.5rem;
+        }
+        a{
+            width: fit-content;
+        }
     }
     .newsletter__container__form {
         display: flex;
         flex-direction: column;
         margin-top: 1em;
+        position: relative;
+        .icon{
+            width: 1rem;
+            height: 1rem;
+            position: absolute;
+            left: 11px;
+            top: 16px;
+        }
+        .phone{
+            top: 5.3rem;
+        }
+        .user{
+            left: 21.5rem;
+        }
+        .mail{
+            top: 9.7rem;
+        }
         form{
             width: 100%;
         }
-        input{
-            width: 60%;
+
+        input, textarea{
+            
+            width: 100%;
             padding: 1rem;
             border: 1px solid #000;
             font-size: 1rem;
             background-color: transparent;
             margin-right: .5em;
+            border: 1px solid #fff;
+            border-radius: .5rem;
+            margin-bottom: 1rem;
             &:focus{
                 outline: none;
             }
         }
+        input {
+            padding-left: 2rem;
+        }
         button{
-            width: 30%;
-            padding: 1rem;
-            border: none;
-            background: #000;
+            // width: 30%;
+            // padding: 1rem;
             color: #fff;
-            font-size: 1rem;
-            font-weight: 400;
+
             &:focus{
                 outline: none;
             }
@@ -44,20 +83,3 @@
     }
 }
 
-@include bp("small"){
-    .newsletter{
-        padding: 8rem 2rem;
-        .newsletter__container {
-            display: flex;
-            flex-direction: row;
-            .newsletter__container__title{
-                width: 50%;
-                display: flex;
-                align-self: center;
-            }
-            .newsletter__container__form{
-                width: 50%;
-            }
-        }
-    }
-}

@@ -1,9 +1,10 @@
 .layout{
-    padding-top: 10vh;
+    background: #0A0009;
+    color: white;
 }
 
-@include bp("small"){
-    .layout{
-        padding-top: 10vh;
-    }
-}
+// @include bp("small"){
+//     .layout{
+//         padding-top: 10vh;
+//     }
+// }

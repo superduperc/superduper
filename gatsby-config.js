@@ -6,9 +6,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `islamtshirt`,
-    description: `We want to spread dakwah with T-shirt`,
-    author: `@islamtshirt`,
+    title: `superduper`,
+    description: `vape`,
+    author: `@zulzdn`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -57,44 +57,8 @@ module.exports = {
         '~': path.join(__dirname, 'src/'),
       },
     },
-    {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: 
-        // "3169340789952718", 
-        "363630142130463",
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-tagmanager",
-      options: {
-        id: "GTM-5W79T2F",
-        includeInDevelopment: true,       
-        enableWebVitalsTracking: true,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "AW-301837594",
-          // "G-S4T9HXCRZY",
-        ],
-        pluginConfig: {
-          head: true,
-          // Avoids sending pageview hits from custom paths
-          // exclude: ["", ""],
-        },
-      },
-    },
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-          endpoint: 'https://islamtshirt.us5.list-manage.com/subscribe/post?u=ac156967a82dbb399c1dcfe94&amp;id=ace8e65a23', 
-          timeout: 3500,
-      },
-  },
+
   {
     resolve: `gatsby-plugin-portal`,
     options: {
@@ -102,17 +66,5 @@ module.exports = {
       id: 'portal',        
     },
   },
-  {
-    resolve: `gatsby-plugin-modal-routing`,
-    // options: {
-    //   // A selector to set react-modal's app root to, default is `#___gatsby`
-    //   // See http://reactcommunity.org/react-modal/accessibility/#app-element
-    //   appElement: '#___gatsby',
-
-    //   // Object of props that will be passed to the react-modal container
-    //   // See http://reactcommunity.org/react-modal/#usage
-    //   modalProps: { },
-    // }
-  }
   ],
 }

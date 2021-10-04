@@ -7,7 +7,7 @@ import ContextProvider from '~/provider/ContextProvider'
 import Navigation from '~/components/Navigation'
 import Footer from '../components/footer'
 
-import FloatingWhatsApp from 'react-floating-whatsapp'
+// import FloatingWhatsApp from 'react-floating-whatsapp'
 // import 'react-floating-whatsapp/dist/index.css'
 import me from "../images/me.png"
 import "../style/wa/index.css"
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
               {children}
             </div>
             <Footer />
-            <FloatingWhatsApp phoneNumber="+6281354789375" accountName="muhzulzidan" avatar={me} />
+            {/* <FloatingWhatsApp phoneNumber="+6281354789375" accountName="muhzulzidan" avatar={me} /> */}
           </div>
         )}
       />

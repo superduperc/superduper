@@ -6,9 +6,10 @@ import Hamburger from 'hamburger-react'
 // media query for desktop
 import { useMediaQuery } from 'react-responsive'
 import StoreContext from '~/context/StoreContext'
-import Logo from '../../images/svg/logo.svg'
+// import Logo from '../../images/svg/logo.svg'
 import Menu from '../menu/menu'
 import Cart from '../../images/svg/cart.svg'
+import { StaticImage } from "gatsby-plugin-image"
 
 const useQuantity = () => {
   const {
@@ -40,16 +41,24 @@ const Navigation = ({ siteTitle }, childMenu) => {
       <>
         <div className="LogoHeader">
           <Link to="/">
-            <Logo/>
+            {/* <Logo/> */}
+            <StaticImage src="../../images/logo.png" alt="Logo" />
           </Link>
-          {isDesktop && <div className="header__menu"> 
-            <Link to="/shop" > Shop </Link>
-            <Link to="/about" > About </Link>
-            </div>}
+          {isDesktop && <div className="header__menu">
+            <Link to="/shop" > Why SuperDuper </Link>
+            <Link to="/about" > New Arrivals </Link>
+            <Link to="/about" > PERFECT FLAVORS </Link>
+            <Link to="/about" > SuperDuper Community </Link>
+            <Link to="/about" > Gallery </Link>
+            <Link to="/about" > Story of Simon </Link>
+            <div className="login " >
+              <Link to="login" className="button" > Login </Link>
+            </div>
+          </div>}
         </div>
 
-        
-        <div className="burgerContainer">
+
+        {/* <div className="burgerContainer">
           <Link to="/cart">
             {hasItems && <span>{quantity}</span>}
             <Cart />
@@ -65,6 +74,7 @@ const Navigation = ({ siteTitle }, childMenu) => {
             </div>
           }
         </div>
+       */}
       </>
     </header>
   )
