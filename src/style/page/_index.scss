@@ -21,9 +21,9 @@
         .container {
             display: flex;
             flex-direction: column;
-            padding-top: 7rem;
+            // padding-top: 7rem;
             padding-left: 5vw;
-
+            justify-content: center;
             h2 {
                 font-weight: 900;
                 font-size: 2.5rem;
@@ -69,7 +69,8 @@
         }
 
         .img {
-            width: 45%;
+            width: 40vw;
+            height: auto;
             z-index: 2;
         }
 
@@ -104,6 +105,9 @@
             display: flex;
             align-self: center;
             margin-left: -5vw;
+
+            line-height: 1.5;
+            letter-spacing: 2px;
 
             h2 {
                 font-weight: 900;
@@ -165,6 +169,9 @@
             }
 
             p {
+                font-size: 1.5em;
+                font-weight: 600;
+                letter-spacing: 1px;
                 margin-bottom: 4rem;
             }
 
@@ -193,6 +200,9 @@
             line-height: 1.2;
             padding-right: 4rem;
 
+            letter-spacing: 1px;
+            line-height: 1.5;
+
             a {
                 width: fit-content;
             }
@@ -215,6 +225,7 @@
         padding: 10rem 0rem;
 
         .child {
+            letter-spacing: 1px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -268,7 +279,7 @@
     .welcome {
         position: relative;
         padding-top: 10rem;
-        padding-bottom: 15rem;
+        // padding-bottom: 15rem;
 
         h2 {
             font-size: 2.5rem;

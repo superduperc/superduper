@@ -36,10 +36,14 @@ export default class classNewsLetter extends React.Component {
                     <div className="newsletter__container__form">
                         <form onSubmit={this._handleSubmit}>
                             <div style={{ display: "flex" }}>
-                                <StaticImage src={`../images/svg/user.png`} className="icon" />
-                                <input onChange={this.handleChange} type="text" name="firstname" placeholder="First Name" />
-                                <StaticImage src={`../images/svg/user.png`} className="icon user" />
-                                <input onChange={this.handleChange} type="text" name="lastname" placeholder="Last Name" />
+                                <div style={{ position: "relative", width: "50%"}}>
+                                    <StaticImage src={`../images/svg/user.png`} className="icon" />
+                                    <input onChange={this.handleChange} type="text" name="firstname" placeholder="First Name" />
+                                </div>
+                                <div style={{ position: "relative", width: "50%" }}>
+                                    <StaticImage src={`../images/svg/user.png`} className="icon user" />
+                                    <input onChange={this.handleChange} type="text" name="lastname" placeholder="Last Name" />
+                                </div>
                             </div>
                             <StaticImage src={`../images/svg/telephone.png`} className="icon phone" />
                             <input onChange={this.handleChange} type="phone" name="phone" placeholder="Phone" />

@@ -45,12 +45,12 @@ const Navigation = ({ siteTitle }, childMenu) => {
             <StaticImage src="../../images/logo.png" alt="Logo" />
           </Link>
           {isDesktop && <div className="header__menu">
-            <Link to="/shop" > Why SuperDuper </Link>
-            <Link to="/about" > New Arrivals </Link>
-            <Link to="/about" > PERFECT FLAVORS </Link>
-            <Link to="/about" > SuperDuper Community </Link>
-            <Link to="/about" > Gallery </Link>
-            <Link to="/about" > Story of Simon </Link>
+            <Link to="/" > Why SuperDuper </Link>
+            <Link to="/" > New Arrivals </Link>
+            <Link to="/" > PERFECT FLAVORS </Link>
+            <Link to="/" > SuperDuper Community </Link>
+            <Link to="/" > Gallery </Link>
+            <Link to="/" > Story of Simon </Link>
             <div className="login " >
               <Link to="login" className="button" > Login </Link>
             </div>
